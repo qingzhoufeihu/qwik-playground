@@ -12,7 +12,9 @@ export default extendConfig(baseConfig, () => {
       minify: false,
     },
     plugins: [
-      denoServerAdapter(),
+      denoServerAdapter({
+        ssg: null,
+      }),
     ],
   };
 });
