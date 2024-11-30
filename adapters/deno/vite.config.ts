@@ -12,12 +12,7 @@ export default extendConfig(baseConfig, () => {
       minify: false,
     },
     plugins: [
-      denoServerAdapter({
-        ssg: {
-          include: ["/*"],
-          origin: "https://yoursite.dev",
-        },
-      }),
+      denoServerAdapter(),
     ],
   };
 });
